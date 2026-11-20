@@ -464,7 +464,7 @@ def main() -> None:
 
     note = f"""# PDL lag-window selection diagnostics
 
-Data source: `Coastal urban resilience.xlsx` (Resilience_Score) and `Baidu index.xlsx` (baseline PAO).
+Data source: `Supplementary Data 2.xlsx` (Resilience_Score) and `Supplementary Data 1.xlsx` (baseline PAO).
 
 PAO (Eq. 2) is divided by {PAO_SCALE:,.0f}, so coefficients are per 100,000 PAO units. All models include city fixed effects and year fixed effects with city-clustered standard errors.
 

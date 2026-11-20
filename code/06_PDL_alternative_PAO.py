@@ -385,7 +385,7 @@ def main() -> None:
 
 Specification: centered quadratic Almon PDL with PAO lags 1-{LAG_MAX}, city fixed effects, year fixed effects, and city-clustered standard errors. PAO is divided by {PAO_SCALE:,.0f}, so coefficients are per 100,000 PAO units.
 
-Inputs: `Coastal urban resilience.xlsx` and `Baidu index.xlsx` (PAO versions built in common.py).
+Inputs: `Supplementary Data 2.xlsx` and `Supplementary Data 1.xlsx` (PAO versions built in common.py).
 
 Output: `PAO_PDL_robustness_results.xlsx` (sheet Table_B_PDL_robustness = Table S9).
 

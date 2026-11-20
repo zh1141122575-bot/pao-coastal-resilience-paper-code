@@ -238,7 +238,7 @@ def main() -> None:
 This diagnostic uses the PDL-supported lag window L{LAG_START}-L{LAG_END}.
 
 Lag-adjusted PAO is defined as the city-year mean of PAO from t-{LAG_START} to t-{LAG_END}.
-The current resilience score is Resilience_Score in `Coastal urban resilience.xlsx`.
+The current resilience score is Resilience_Score in `Supplementary Data 2.xlsx`.
 
 The main classification is annual city-year mismatch identification for
 {pooled[COL_YEAR].min()}-{pooled[COL_YEAR].max()}. City-level dominant type and

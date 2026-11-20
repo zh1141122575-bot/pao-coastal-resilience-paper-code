@@ -14,8 +14,8 @@ from scipy import stats
 
 CODE_DIR = Path(__file__).resolve().parent
 DATA_DIR = CODE_DIR.parent
-BAIDU_FILE = DATA_DIR / "Baidu index.xlsx"
-RESILIENCE_FILE = DATA_DIR / "Coastal urban resilience.xlsx"
+BAIDU_FILE = DATA_DIR / "Supplementary Data 1.xlsx"
+RESILIENCE_FILE = DATA_DIR / "Supplementary Data 2.xlsx"
 OUTPUT_ROOT = Path(os.environ.get("PAO_OUTPUT_DIR", CODE_DIR / "outputs"))
 
 COL_PROVINCE = "省份"

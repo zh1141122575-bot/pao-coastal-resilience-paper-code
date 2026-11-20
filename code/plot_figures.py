@@ -232,8 +232,11 @@ def draw_scatter(ax: plt.Axes, mismatch: pd.DataFrame, year: int, pao_thr: float
                alpha=0.92, edgecolors="none", zorder=3)
     ax.axvline(pao_thr / 1000, color="black", linewidth=0.70 * GG_LW, zorder=2)
     ax.axhline(res_thr, color="black", linewidth=0.70 * GG_LW, zorder=2)
-    for xf, yv, lab in [(0.05, 0.92, "(L-H)"), (0.86, 0.92, "(H-H)"), (0.05, 0.05, "(L-L)"), (0.86, 0.05, "(H-L)")]:
-        ax.text(xf * x_max, yv, lab, fontsize=3.4 * GG_PT, ha="center", va="center", clip_on=True, zorder=4)
+    label_box = dict(boxstyle="square,pad=0.12", facecolor="white", edgecolor="none")
+    for xf, yv, lab, ha in [(0.01, 0.92, "(L-H)", "left"), (0.60, 0.92, "(H-H)", "center"),
+                            (0.01, 0.05, "(L-L)", "left"), (0.60, 0.05, "(H-L)", "center")]:
+        ax.text(xf * x_max, yv, lab, fontsize=3.4 * GG_PT, ha=ha, va="center", clip_on=True, zorder=4,
+                bbox=label_box if ha == "left" else None)
     ax.set_xlim(0 - 0.01 * x_max, x_max * 1.02)
     ax.set_ylim(-0.01, 1.03)
     ax.xaxis.set_major_locator(MaxNLocator(nbins=4, steps=[1, 2, 2.5, 5, 10]))
